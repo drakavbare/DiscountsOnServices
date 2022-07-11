@@ -12,17 +12,17 @@
       <div class="header-container Xcontainer"><a class="header-logo" href="index.html"><img class="header-logo__img" src="./img/logo.svg" alt="logo" width="55" height="55"><span class="header-logo__title">DiscountsOnServices</span></a>
         <nav class="header-nav">
           <div class="header-nav__menu">
-            <button class="text-link icon header-nav__menu-item header-nav__menu-item-list" type="button" data-headerMenuBtn>Subscriptions
+            <button class="text-link-black icon header-nav__menu-item header-nav__menu-item-list" type="button" data-headerMenuBtn>Subscriptions
               <div class="icon header-nav__menu-icon" data-headerSubArrow><svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3.99987 2.58633L6.47487 0.111328L7.18187 0.818328L3.99987 4.00033L0.817871 0.818328L1.52487 0.111328L3.99987 2.58633Z" fill="#333333"/>
 </svg>
               </div>
             </button>
             <ul class="header-nav__subscription-list" data-headerMenuList>
-              <li class="header-nav__subscription-item text-link"> <a class="header-nav__subscription-link" href="Netflix.html">Netflix</a></li>
-              <li class="header-nav__subscription-item text-link"> <a class="header-nav__subscription-link" href="YouTube Premium.html">YouTube Premium</a></li>
-              <li class="header-nav__subscription-item text-link"> <a class="header-nav__subscription-link" href="Spotify.html">Spotify</a></li>
-            </ul><a class="text-link header-nav__menu-item" href="faq.html">FAQ </a><a class="text-link header-nav__menu-item" href="Support.html">Support</a><a class="text-link header-nav__menu-item" href="About.html">About</a>
+              <li class="header-nav__subscription-item text-link-black"> <a class="header-nav__subscription-link" href="Netflix.html">Netflix</a></li>
+              <li class="header-nav__subscription-item text-link-black"><a class="header-nav__subscription-link" href="YouTube Premium.html">YouTube Premium</a></li>
+              <li class="header-nav__subscription-item text-link-black"><a class="header-nav__subscription-link" href="Spotify.html">Spotify</a></li>
+            </ul><a class="text-link-black header-nav__menu-item" href="faq.html">FAQ </a><a class="text-link-black header-nav__menu-item" href="Support.html">Support</a><a class="text-link-black header-nav__menu-item" href="About.html">About</a>
           </div>
           <div class="header-nav__socials"><a class="header-nav__socials-link" href="#">
               <div class="icon header-nav__socials-item"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,24 +34,45 @@
 </svg>
               </div></a></div>
           <div class="header-nav__lang">         
-            <button class="text-link header-nav__lang-btn icon" type="button" data-headerEnBtn><span data-headerEnSpan>EN</span>
+            <button class="text-link-black header-nav__lang-btn icon" type="button" data-headerEnBtn><span data-headerEnSpan>EN</span>
               <div class="icon header-nav__lang-icon" data-headerEnArrow><svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3.99987 2.58633L6.47487 0.111328L7.18187 0.818328L3.99987 4.00033L0.817871 0.818328L1.52487 0.111328L3.99987 2.58633Z" fill="#333333"/>
 </svg>
               </div>
             </button>
             <ul class="header-nav__lang-list" data-headerEnList>
-              <li class="header-nav__lang-list-item text-link"> <a class="header-nav__lang-list-link" href="#" data-headerEnLang>English</a></li>
-              <li class="header-nav__lang-list-item text-link"> <a class="header-nav__lang-list-link" href="#" data-headerUaLang>Ukraine</a></li>
-              <li class="header-nav__lang-list-item text-link"> <a class="header-nav__lang-list-link" href="#" data-headerRuLang>Russian</a></li>
+              <li class="header-nav__lang-list-item text-link-black"> <a class="header-nav__lang-list-link" href="#" data-headerEnLang>English</a></li>
+              <li class="header-nav__lang-list-item text-link-black"> <a class="header-nav__lang-list-link" href="#" data-headerUaLang>Ukraine</a></li>
+              <li class="header-nav__lang-list-item text-link-black"> <a class="header-nav__lang-list-link" href="#" data-headerRuLang>Russian</a></li>
             </ul>
           </div>
-          <button class="btn-blue header-nav__btn" href="#">Log in</button>
+          <button class="btn-blue header-nav__btn" href="#" data-headerNavBtn>Log in</button>
         </nav>
-        <div class="header__login"> 
+        <div class="header__login" data-HeaderLogin>
           <div class="header__login-wrapper">
-            <div class="header__login-content"> 
-              <div class="h2">МОДАЛКА</div>
+            <div class="header__login-content header-login">
+              <div class="header-login__top"> 
+                <h2 class="header-login__top-title">Log in</h2>
+                <button class="header-login__top-btn" type="button" data-HeaderLoginTopBtn><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.99974 5.58574L11.9497 0.635742L13.3637 2.04974L8.41374 6.99974L13.3637 11.9497L11.9497 13.3637L6.99974 8.41374L2.04974 13.3637L0.635742 11.9497L5.58574 6.99974L0.635742 2.04974L2.04974 0.635742L6.99974 5.58574Z" fill="#3A3A3C"/>
+</svg>
+                </button>
+              </div>
+              <div class="header-login__new-user"> <span class="header-login__new-user-text">New user? </span><a class="header-login__new-user-link text-link-blue" href="#">Create an account</a></div>
+              <form class="header-login__form" action="get"> 
+                <label class="header-login__label header-login__label--email" for="email">Email Address
+                  <input class="header-login__input header-login__input--email" type="email" placeholder="Enter your e-mail">
+                  <!--<input class="header-login__input header-login__input--email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required placeholder="Enter your e-mail">-->
+                </label>
+                <label class="header-login__label header-login__label--password" for="password">Password
+                  <input class="header-login__input header-login__input--password" type="password" placeholder="********">
+                </label>
+                <div class="header-login__form-bottom"><a class="header-login__form-link" href="#">Forfot password?</a>
+                  <button class="header-login__form-btn btn-blue" type="button">Log in</button>
+                </div>
+                <div class="header-login__signin"><span class="header-login__signin-text">Or sign in with</span></div>
+                <div class="header-login__signin-list"> <a class="header-login__signin-item" href="#"><img class="header-login__signin-img" src="./img/google.png"></a><a class="header-login__signin-item" href="#"> <img class="header-login__signin-img" src="./img/facebook.png"></a><a class="header-login__signin-item" href="#"> <img class="header-login__signin-img" src="./img/apple.png"></a></div><div class="header-login__disclaimer">Protected by reCAPTCHA and subject to the Google <a class="header-login__disclaimer-link--privacy text-link-blue" href="#">Privacy Policy</a> and <a class="header-login__disclaimer-link--terms text-link-black" href="#">Terms of Service.</a></div>
+              </form>
             </div>
           </div>
         </div>
